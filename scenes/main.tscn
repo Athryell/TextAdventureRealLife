@@ -4,7 +4,7 @@
 
 [node name="Main" type="Node"]
 
-[node name="Dialogue" type="Node2D" parent="."]
+[node name="Dialogue" type="Node" parent="."]
 script = ExtResource("1_670qj")
 
 [node name="GUI" type="Control" parent="."]
