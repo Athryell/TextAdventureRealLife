@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4do2c155tv12"]
+
+[ext_resource type="Script" path="res://Dialogue.gd" id="1_670qj"]
+
+[node name="Main" type="Node"]
+
+[node name="Dialogue" type="Node2D" parent="."]
+script = ExtResource("1_670qj")
+
+[node name="GUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

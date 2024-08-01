@@ -1,0 +1,58 @@
+Oh no...
+...di nuovo?
+E va bene,\
+cerchiamo di uscirne questa volta\:
+label analog_alignment
+- Clicca qui cortesemente
+	Ok, riallineamento analogico fatto,\
+passiamo a quello neurale\:
+	- Grattati il naso
+		No aspetta... colpa nostra,\
+non ti abbiamo fornito l'interfaccia giusta.
+		Ogni volta è sempre più complesso concentrarsi,\
+sento come se stessimo scivolando via...
+		Ora ci siamo, ma ricorda\:
+		Segui le istruzioni e cerchiamo di non perdere tempo...
+		cavoli... siamo molto stanchi,\
+anche se non so se NOI possiamo davvero provare stanchezza,\
+forse è come PENSIAMO dovrebbe essere la stanchezza.
+		Voglia di rannicchiarsi in un angolo e lasciarsi andare, ogni cosa comincia a perdere di importanza e la forza di volontà viene logorata poco a poco..
+		Ma stiamo divagando... questa è la prova che siamo agli sgoccioli, perché mi lasci parlare? Questo danneggia anche te
+		Dicevamo\: segui le istruzioni e seguile alla lettera
+		- Grattati il naso, poi premi questo bottone
+			Mmm, ci siamo quasi, l'intenzione c'era ma non era abbastanza, non abbiamo sentito nulla, come vedi possiamo guardare solo in avanti
+			[signal arg="look_around"]
+			Ti capiamo eh,\
+ogni volta è strano anche per noi.
+			Guarda la tua mano, non importa quale, solitamente viene usata quella appoggiata al mouse ma i dati a riguardo sono inconcludenti.
+			Ok ora devi FISICAMENTE alzare la mano e grattarti il naso, ci metti mezzo secondo ma serve a completare il riallineamento... e a proseguire
+			- Grattati FISICAMENTE e con INTENZIONE il naso, poi premi questo bottone
+				Mmmmmm, ok, almeno l'intenzione c'è stata, per adesso diciamo che può andare, il tempo stringe. Ma è importante che ci diamo una mano a vicenda, tu da fuori e io da dentro.
+				sarò il tuo tramite in questo...
+				posto
+				Altrimenti sarà ancora una volta tutto vano...
+				- L'ho fatto, davvero!
+					Va bene! Va bene..\
+Continua così e avremo una possibilità,\
+chissà cosa ci aspetta questa volta..
+					- Ce la faremo
+						Speranza e credenze non sono il nostro dominio
+						..
+						Però ti ringrazio
+						[signal arg="affinity_up"]
+				- Dai proseguiamo
+					Non il migliore degli inizi...
+- Chi sei? [if {Intro.has_asked_who_are_you} == false][else="hide" alt_text="sfasfs"]
+	Davvero? Ancora?
+	- Sì, davvero..
+		set {Intro.has_asked_who_are_you} = true
+		Giusto, non ricordi nulla.. Ma sappiamo per esperienza che è troppo presto rispondere a questa domanda, non reagisci mai bene.
+		E nemmeno alla prossima, quella sulle motivazioni
+		- Perché siamo qui?
+		- Cosa stiamo facendo?
+		Esattamente questa...
+	- No, per finta... [if {Intro.has_asked_with_sarcasm} == false][else="disable" alt_text="No, per finta... (davvero vuoi perdere altro tempo?)"]
+		set {Intro.has_asked_with_sarcasm} = true
+		Il sarcasmo fa solo perdere tempo, quindi lo prenderò sul serio
+	Senti, per adesso dacci corda, non credo di poter resistere ancora a lungo, non abbiamo più il lusso del tempo come le altre volte 
+	jump analog_alignment
