@@ -1,6 +1,12 @@
 Oh no...
-..again di nuovo?
-- [ENG]
-	[update_position position="300" time="0.0"]
-- [ITA]
-	[update_position position="50" vector="Vector2(300, 300)" time="0.0"]
+[style]
+- [ENG] I don't understand...
+	[signal arg="set_language_eng"]
+- [ITA] Non capisco...
+	[signal arg="set_language_ita"]
+Non di nuovo...
+- [FONT BASE] Dove sono?
+	[signal arg="set_font_base"]
+- [FONT OPENDISLEXIX] Dove sono?
+	[signal arg="set_font_opendislexic"]
+do DialogueManager.go_to_timeline("intro")

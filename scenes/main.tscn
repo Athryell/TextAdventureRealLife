@@ -1,14 +1,30 @@
 [gd_scene load_steps=2 format=3 uid="uid://c4do2c155tv12"]
 
-[ext_resource type="Script" path="res://Dialogue.gd" id="1_670qj"]
+[ext_resource type="Texture2D" uid="uid://d1egfo0nfdhcv" path="res://assets/images/background/main/landscape_with_volcano_forest_pond_ruins_of_castle.jpg" id="1_igsbs"]
 
 [node name="Main" type="Node"]
 
-[node name="Dialogue" type="Node" parent="."]
-script = ExtResource("1_670qj")
-
-[node name="GUI" type="Control" parent="."]
+[node name="SceneGUI" type="Control" parent="."]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainScene" type="Control" parent="SceneGUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="SceneGUI/MainScene"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_igsbs")
+expand_mode = 2

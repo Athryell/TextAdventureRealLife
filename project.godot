@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+DialogueManager="*res://autoload/dialogue_manager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
@@ -54,10 +55,27 @@ translation/file_mode=1
 translation/translation_folder=""
 translation/save_mode=0
 translation/add_separator=false
+layout/style_list=["res://styles/intro_preferences.tres"]
+layout/default_style="res://styles/intro_preferences.tres"
+glossary/default_case_sensitive=true
+text/autopauses={}
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://autoload/": "orange",
+"res://dialogic/": "yellow"
+}
 
 [input]
 

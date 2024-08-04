@@ -1,5 +1,3 @@
-Oh no...
-...di nuovo?
 E va bene,\
 cerchiamo di uscirne questa volta\:
 label analog_alignment
@@ -54,5 +52,5 @@ chissà cosa ci aspetta questa volta..
 	- No, per finta... [if {Intro.has_asked_with_sarcasm} == false][else="disable" alt_text="No, per finta... (davvero vuoi perdere altro tempo?)"]
 		set {Intro.has_asked_with_sarcasm} = true
 		Il sarcasmo fa solo perdere tempo, quindi lo prenderò sul serio
-	Senti, per adesso dacci corda, non credo di poter resistere ancora a lungo, non abbiamo più il lusso del tempo come le altre volte 
+	Senti, per adesso dacci corda, non credo di poter resistere ancora a lungo, non abbiamo più il lusso del tempo come le altre volte
 	jump analog_alignment
