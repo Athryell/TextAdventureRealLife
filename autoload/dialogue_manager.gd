@@ -32,4 +32,3 @@ func _on_dialogic_signal(arg):
 			print("base font")
 		"set_font_opendislexic":
 			print("opendislexic font")
-
